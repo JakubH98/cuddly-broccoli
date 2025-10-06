@@ -1,0 +1,63 @@
+html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.myButton {
+    padding: 10px 14px;
+    background-color: hsl(0, 0%, 90%);
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
+
+.myButton:hover {
+    background-color: hsla(0, 0%, 0%, 0.15);
+    box-shadow: 2px 2px 2px hsl(0, 0%, 90%);
+}
+
+.myButton:active {
+    background-color: hsla(0, 0%, 0%, 0.1);
+    transform: scale(.95);
+}
+
+.scanModule {
+    width: 100%;
+    display: grid;
+    row-gap: 10px;
+    margin-bottom: 5px;
+    /*align-items: stretch;*/
+    justify-items: center;
+}
+
+
+.sourceMedia,
+.glass {
+    width: 100%;
+    grid-row: 1;
+    grid-column: 1;
+
+    border-radius: 10pt;
+    box-shadow: 4px 4px 4px hsla(0, 0%, 0%, 0.4);
+}
+
+.glass {
+    /* width: 1280px; */
+    /* height: 720px; */
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(12px) brightness(70%);
+    mask-image: url("./assets/rect_cutout.svg");
+    mask-repeat: no-repeat;
+    /* border: 1px solid rgba(0, 0, 0.18); */
+    box-shadow: 4px 4px 4px hsla(0, 0%, 0%, 0.4);
+}
+
+
+#cutoutCanvas {
+    position: absolute;
+    z-index: -99;
+}

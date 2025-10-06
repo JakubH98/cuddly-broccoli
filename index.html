@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZBar Test</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/@undecaf/zbar-wasm@0.11.0/dist/index.js"></script>
+    <script defer src="./index.js"></script>
+</head>
+<body>
+    <div class="scanModule">
+        <video class="sourceMedia" id="sourceMedia" src=""></video>
+        <div class="glass" id="glass"></div>
+        <button id="btnActivate" class="myButton">Activate cam</button>
+        <button id="btnDeactivate" class="myButton">Disable cam</button>
+        <button id="btnPrint" class="myButton">Capture</button>
+        <canvas id="canvas" hidden></canvas>
+        <p id="result"></p>
+    </div>
+</body>
+</html>
